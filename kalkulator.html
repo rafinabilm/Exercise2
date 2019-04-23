@@ -26,7 +26,7 @@
                     <input type="button" value="3"onclick="angka(value)">
                 </td>
                 <td>
-                    <input type="button" value="/">
+                    <input type="button" value="/" onclick="angka(value)"
                 </td>
             </tr>
             <tr>
@@ -40,7 +40,7 @@
                     <input type="button" value="6"onclick="angka(value)">
                 </td>
                 <td>
-                    <input type="button" value="*">
+                    <input type="button" value="*"onclick="angka(value)">
                 </td>
             </tr>
             <tr>
@@ -54,7 +54,7 @@
                     <input type="button" value="9"onclick="angka(value)">
                 </td>
                 <td>
-                    <input type="button" value="+">
+                    <input type="button" value="+" onclick="angka(value)">
                 </td>
             </tr>
             <tr>
@@ -62,13 +62,13 @@
                     <input type="button" value="0"onclick="angka(value)">
                 </td>
                 <td>
-                    <input type="button" value="C">
+                    <input type="button" value="C"onclick="angka(value)">
                 </td>
                 <td>
-                    <input type="button" value="-">
+                    <input type="button" value="-"onclick="angka(value)">
                 </td>
                 <td>
-                        <input type="button" value="=">
+                        <input type="button" value="=" onclick="hitung()">
                 </td>
                
             </tr>
@@ -76,8 +76,11 @@
         <script>
         var input = document.getElementById("Kotak");
             function angka(g){
-               return input.value=g
+               return input.value +=g
             }
+            function hitung() {
+            return input.value=eval(input.value);
+        }
         </script>
       </div>
 </body>
