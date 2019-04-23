@@ -62,7 +62,7 @@
                     <input type="button" value="0"onclick="angka(value)">
                 </td>
                 <td>
-                    <input type="button" value="C"onclick="angka(value)">
+                    <input type="button" value="C"onclick="Hapus()">
                 </td>
                 <td>
                     <input type="button" value="-"onclick="angka(value)">
@@ -81,6 +81,23 @@
             function hitung() {
             return input.value=eval(input.value);
         }
+
+        function Hapus() {
+            return input.value="";
+        }
+
+        input.addEventListener('keypress',function(e) {
+            e.preventDefault();
+            if(e.keyCode===13){
+                hitung();
+            }
+            else if (e.keyCode===48||e.keyCode===49||e.keyCode===50||e.keyCode===51||e.keyCode===52||e.keyCode===53||e.keyCode===54||e.keyCode===55||e.keyCode===56||e.keyCode===57){
+                angka(e.key);
+            }
+            else if(e.keyCode===42||e.keyCode===43||e.keyCode===45||e.keyCode===47){
+                angka(e.key);
+            }
+        })
         </script>
       </div>
 </body>
