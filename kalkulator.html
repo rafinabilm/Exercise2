@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container text-center">
+        <table border="3">
+            <tr>
+                <td colspan="4">
+                <input type="text" placeholder="Masukan Nilai" id="Kotak">
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="angka(value)">
+                </td>
+                <td>
+                    <input type="button" value="2" onclick="angka(value)">
+                </td>
+                <td>
+                    <input type="button" value="3"onclick="angka(value)">
+                </td>
+                <td>
+                    <input type="button" value="/">
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <input type="button" value="4"onclick="angka(value)">
+                </td>
+                <td>
+                    <input type="button" value="5"onclick="angka(value)">
+                </td>
+                <td>
+                    <input type="button" value="6"onclick="angka(value)">
+                </td>
+                <td>
+                    <input type="button" value="*">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7"onclick="angka(value)">
+                </td>
+                <td>
+                    <input type="button" value="8"onclick="angka(value)">
+                </td>
+                <td>
+                    <input type="button" value="9"onclick="angka(value)">
+                </td>
+                <td>
+                    <input type="button" value="+">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="0"onclick="angka(value)">
+                </td>
+                <td>
+                    <input type="button" value="C">
+                </td>
+                <td>
+                    <input type="button" value="-">
+                </td>
+                <td>
+                        <input type="button" value="=">
+                </td>
+               
+            </tr>
+        </table>
+        <script>
+        var input = document.getElementById("Kotak");
+            function angka(g){
+               return input.value=g
+            }
+        </script>
+      </div>
+</body>
+</html>
